@@ -1,0 +1,89 @@
+/* {outline:1px solid black;}
+html body{outline:1px solid red;}
+div{outline:1px solid blue;}
+/****************************GLOBAL***************************/
+body{
+	color:#555;
+	font-family: Arial;
+	font-size: 13px;
+}
+h1,h2,h3,h4,h5{
+	color:#A9268D;
+	font-family:"Oswald",Arial, sans-serif;/*definido por google*/
+}
+h3,h5{
+	text-align: center;/*se puede poner defrente en html con class text-center q esta definido por boostrap*/
+}
+/****************************list-nav***************************/
+.list-nav{
+	padding: 0px 0px;
+	margin: 10px 0px;
+}
+.list-nav{
+	text-align: center;
+}
+.list-nav li{
+	display: inline-block;
+}
+.list-nav a{
+	display: block; /*para que tengan mas cuerpo*/
+	padding: 15px 20px;/**/
+	color:#555;
+	font-family:"Oswald",Arial, sans-serif;/*definido por google*/
+	/*text-transform: uppercase; letras en mayuscula*/
+	text-decoration: none;/*para que no tenga el subrayado de enlace*/
+	transition:all 0.5s;
+}
+.list-nav a:hover{
+	text-decoration: none;/*nos aseguramos q no tenga subrayado*/
+	background: #D0D0D0;
+	transform: scale(1.2);/*agranda 1.2 =20% 1.5=50%*/
+}
+/****************************HEADER***************************/
+.header-content{
+	background: url("img/f.png") center no-repeat;/*cuando hay varias carpetas se busca con ("../img/background.jpg") puntos/ solo con BACKGROUND:se puede hubicar la imagen con center,rigth,etc o en pixeles px*/
+	background-size:cover ; /*para que cubra toda la pantalla y no haya mosaico*/
+	color: #FFF;
+	text-align: center;
+	padding: 50px 0;
+}
+.header-content h1{
+	color: #FFF;
+	text-shadow: #A5A4A4;/*sombra*/
+}
+/****************************ABOUT ME***************************/
+.about-me .biografia img{/*con la coma  puedo seleccionar dos clases .1 , .2  no es igual a .1 .2*/
+	float: left;
+	width:200px;
+	margin-right: 15px;/*margen derecho para separar NO padding*/
+	/*border: 1px solid #555;
+	padding: 5px;  es para el margin separado de la imagen*/ 
+}
+.about-me{
+	background: url("img/tt.png"); 
+	text-align: justify;
+}
+/****************************MY FAVOURITES***************************/
+.favoritos{
+	background: white;
+	text-align: center;
+}
+.favoritos img{
+	width: 200px;
+	border: 1px solid #A5A3A3;
+	padding: 5px;
+	border-radius: 100%;
+}
+.favoritos .list-nav a:hover {
+	background: none;
+}
+/****************************CONTACT***************************/
+.contacto {
+	background: url("img/bj.png");
+}
+.contacto ul a li {
+display: inline-block;	
+}
+.contacto .list-nav a:hover {
+	background: none;
+}
